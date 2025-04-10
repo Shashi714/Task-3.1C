@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:layout_marginBottom="16dp"
+        android:max="100"
+        android:progress="0"
+        android:progressTint="@color/black"/>
+
+    <TextView
+        android:id="@+id/progressPercentageTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/_0"
+        android:textSize="16sp"
+        android:layout_marginBottom="16dp"
+        android:layout_gravity="center_horizontal"/>
+
+    <TextView
+        android:id="@+id/questionTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:paddingTop="16dp"/>
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton android:text="@string/option_1" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <RadioButton android:text="@string/option_2" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <RadioButton android:text="@string/option_3" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <RadioButton android:text="@string/option_4" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/submit"
+        android:textSize="18sp"
+        android:layout_marginTop="16dp"/>
+</LinearLayout>
